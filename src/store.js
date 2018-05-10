@@ -10,7 +10,7 @@ export const history = createHistory();
 
 const createMiddleware = () => {
     const common = [thunk, routerMiddleware(history)],
-          dev    = [createLogger];
+          dev    = [createLogger()];
 
     if (process.env.NODE_ENV === 'production') {
         return applyMiddleware(...common);
