@@ -6,14 +6,11 @@ export default class Container extends Component {
         return (
             <Grid>
                 <Row start="xs">
-                    <Col xs={12} sm={4} md={6} lg={3}>
+                    <Col xs={12} sm={4} lg={3}>
                         <div className="cell">Cell 1</div>
                     </Col>
-                    <Col xs={12} sm={8} md={6} lg={3}>
+                    <Col xs={12} sm={8} lg={9}>
                         <div className="cell">Cell 2</div>
-                    </Col>
-                    <Col xs={12} smOffset={4} sm={8} md={12} lg={6}>
-                        <div className="cell">Cell 3</div>
                     </Col>
                 </Row>
             </Grid>
